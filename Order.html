@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ORDER PAGE">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Order Page</title>
+     <!-- Linked css file to html.-->
+    <link rel="stylesheet" href="./CSS/Styling.css">
+     <!-- Linked google Fonts to html.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+</head>
+<!-- every attribute have defined class and id name so that css code can be easy for giving styling in html.-->
+<body class="order">
+    <!-- This is the header section -->
+    <header class="start">
+            <img src="./IMG/lapinoz-logo.png" alt="pizza img" class="we">
+    </header>
+    <!-- Header section ends here -->
+    <!-- Main content goes here -->
+    <main class="form">
+        <!-- This is a code explaining the purpose of the following div -->
+        <div>
+            <!-- Form content start here -->
+            <form method="post" name="pizzaform" action="Order.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name:</label>  
+                    <!-- Input field for First name -->
+                    <input type="text" name="firstname">
+                    <label>Last Name:</label>
+                     <!-- Input field for Last name -->
+                    <input type="text" name="lastname"><br>
+                    <label>Mobile No.:</label>
+                     <!-- Input field for Mobile No. -->
+                    <input type="text" name="mobile">
+                    <label>Email:</label>
+                     <!-- Input field for email -->
+                    <input type="email" name="email"><br>
+                    <label>Address:
+                        <!-- Textarea with a comment on its purpose -->
+                        <textarea cols="40" rows="4" name="address"></textarea>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <label>Size:</label>
+                    <select name="size">
+                        <!-- Dropdown select with comments on options -->
+                        <option>--Select the Size--</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                        <option value="4">Extra Large</option>
+                    </select><br>
+                    <label>Quantity:</label>
+                    <select name="Quantity">
+                        <!-- Dropdown select with comments on options -->
+                        <option>--Select Quantity--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select><br>
+                    <label>Delivery Date:</label>
+                    <!-- Input field for date -->
+                    <input type="date" name="date">
+                    <label>Delivery Time:</label>
+                    <!-- Input field for time -->
+                    <input type="time" name="time"><br>
+                    <label>Select Payment Method:</label>
+                    <select name="payment">
+                        <!-- Dropdown select with comments on options -->
+                        <option>--Select Payment Option--</option>
+                        <option value="1">Cash on Delivery</option>
+                        <option value="2">Credit or Debit Card</option>
+                        <option value="3">MasterCard</option>
+                        <option value="4">App Points</option>
+                    </select>
+                </fieldset>
+                <fieldset class="cheese">
+                    <legend>Cheese Options</legend>
+                    <!-- Radio button for Cheese -->
+                    <input type="radio" name="cheese" value="1"><label>Mozzarella</label>
+                    <input type="radio" name="cheese" value="2"><label>Amul</label>
+                    <input type="radio" name="cheese" value="3"><label>Chedder</label>
+                    <input type="radio" name="cheese" value="4"><label>Ricotta</label>
+                </fieldset>
+                <fieldset class="sauces">
+                    <legend>Sauces Options</legend>
+                    <!-- Radio button for Sauces -->
+                    <input type="radio" name="sauces" value="1"><label>Pizza Sauce</label>
+                    <input type="radio" name="sauces" value="2"><label>BBQ Sauce</label>
+                    <input type="radio" name="sauces" value="3"><label>Pesto Sauce</label>
+                    <input type="radio" name="sauces" value="4"><label>Spicy Red Sauce</label>
+                    <input type="radio" name="sauces" value="5"><label>Garlic Sauce</label>
+                </fieldset>
+                <fieldset class="toppings">
+                    <legend>Write your Toppings:</legend>
+                    <!-- Checkbox for toppings -->
+                    <input type="checkbox" name="topping" value="1"><label>Pepperoni</label>
+                    <input type="checkbox" name="topping" value="2"><label>Mushrooms</label>
+                    <input type="checkbox" name="topping" value="3"><label>Onions</label>
+                    <input type="checkbox" name="topping" value="4"><label>Sausage</label>
+                    <input type="checkbox" name="topping" value="5"><label>Bacon</label>
+                    <input type="checkbox" name="topping" value="6"><label>Extra Cheese</label>
+                    <input type="checkbox" name="topping" value="7"><label>Black Olives</label>
+                    <input type="checkbox" name="topping" value="8"><label>Green Peppers</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Soft Drinks:</legend>
+                    <select name="soft drinks">
+                        <!-- Dropdown select with comments on options -->
+                        <option>--Select your Drink--</option>
+                        <option value="1">Coco Cola</option>
+                        <option value="2">Diet Coke</option>
+                        <option value="3">Red Bull</option>
+                        <option value="4">Monster</option>
+                    </select>    
+                </fieldset>
+                <fieldset>
+                    <legend>Specific Information</legend>
+                    <!-- Textarea with a comment on its purpose -->
+                    <textarea name="instruction" rows="3" cols="42"></textarea>
+                </fieldset>
+                <!-- Submit button -->
+                <input type="submit" value="PLACE YOUR ORDER">
+                <!-- Reset button -->
+                <input type="reset" value="START NEW ORDER">
+            </form>
+            <!-- Form content ends here -->
+        </div>
+    </main>
+</body>
+</html>
+<!--End of the program-->

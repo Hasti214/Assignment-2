@@ -1,0 +1,285 @@
+/* CSS Code for Assignment 2*/
+/* margin and padding given to whole code. */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Home.html page Styling */
+
+/* given style to flex class of body attribute. */
+.flex{
+    height: 95vh;
+    width: auto;
+    background-image: url("../IMG/Food-Pizza-Basil-Tomato.webp") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'arial';
+}
+@media screen and (max-width: 600px) {
+    .flex{
+        background-color: antiquewhite;
+    }
+}
+/* given style to header attribute. */
+header{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+/* given style to menu attribute. */
+header > nav > menu{
+    display: flex;
+    list-style: none;
+    height: 125px;
+    padding: 30px 10px;
+    align-items: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/* given style to li attribute. */
+.flex > header > nav > menu > li{
+    padding: 0px 10px;
+}
+/* given style to a attribute. */
+.flex > header > nav > menu > li > a{
+    color: rgb(234, 206, 168);
+    text-decoration: none;
+}
+/* given style to a attribute for hover. */
+.flex > header > nav > menu > li > a:hover{
+    color: rgb(234, 172, 85);
+    text-decoration: none;
+}
+/* given style to image attribute. */
+img{
+    height: 90px;
+    width: auto;
+}
+/* given style to main attribute. */
+.flex > main{
+display: flex;
+   flex-direction: column;
+   flex: 0.5;
+   align-items: center;
+   justify-content: center;
+}
+/* given style to h1 attribute. */
+.flex > main > div > section > h1{
+    font-family: 'Lumanosimo', cursive;
+    font-size: 2.8em;
+    color: rgb(248, 227, 202);
+    padding-bottom: 7px;
+}
+@media screen and (max-width: 600px){
+.flex > main > div > section > h1{
+    font-size: 1.5em;
+}
+} 
+/* given style to h3 attribute. */
+.flex > main > div > section > h3{
+    font-size: 2.8em;
+    color: rgb(42, 24, 1);
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 600px){
+    .flex > main > div > section > h3{
+        font-size: 1.3em;
+    }
+}
+/* given style to p attribute. */
+.flex > main > div > div.first > p{
+    color: rgb(27, 27, 26);
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    word-spacing: 5px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 600px){
+    .flex > main > div > div.first > p{
+        font-size: 1em;
+    }
+}
+/* given style to a attribute. */
+.flex > main > div > div.second > a{
+    width: 200px;
+    padding: 15px 20px;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    border: 2px solid rgb(90, 71, 8);
+    box-shadow: 0 0 5px rgb(100, 77, 3);
+    border-radius: 5px;
+    margin-top: 40px;
+    color: rgb(52, 30, 1);
+    text-decoration: none;
+}
+/* given style to a attribute for hover. */
+.flex > main > div > div.second > a:hover{
+    background-color: rgb(214, 176, 126);
+    border-color: black;
+    transition: all 0.25s ease-in-out;
+}
+/* given style to footer attribute. */
+footer{
+    padding-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+/* given style to h6 attribute. */
+footer > h6{
+    color: #030000;
+    font-size: 1em;
+    font-weight: 700;
+}
+/* Order.html page Styling */
+
+/* given style to order class of body attribute. */
+.order{
+    padding: 0;
+    margin: 0;
+    background-image: url("../IMG/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* given style to start class of header attribute. */
+.start{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 450px;
+    padding-right: 400px;
+    padding-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+    .start{
+        padding: 0;
+        margin: 0;
+    }
+}
+/* given style to we class of img attribute. */
+.we{
+    height: 120px;
+    width: auto;
+}
+/* given style to form class of main attribute. */
+.form{
+    width: 80%;
+    margin: auto;
+}
+/* given style to fieldset attribute. */
+fieldset {
+    border: 2px solid #f3f3f3; 
+    border-radius: 5px;
+    margin: 10px; /* Add some margin between the fieldsets */
+}    
+/* given style to input attribute of different type. */
+input[type=text],input[type=email],input[type=date],input[type=time]{
+    width: 20%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    background-color: antiquewhite;
+    border: 2px solid rgb(210, 151, 151);
+    border-radius: 5px;
+}
+/* given style to input attribute of different type. */
+input[type=submit],input[type=reset]{
+    width: 20%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    background-color: antiquewhite;
+    border: 2px solid rgb(210, 151, 151);
+    border-radius: 5px;
+    font-weight: 600;
+}
+/* given style to input attribute of different type. */
+input[type=submit]:hover,input[type=reset]:hover{
+    background-color: rgb(241, 201, 148);
+    border-color: black;
+    transition: all 0.25s ease-in-out;
+}
+/* given style to textarea attribute. */
+textarea{
+    padding: 5px 5px;
+    margin: 5px 5px;
+    background-color: antiquewhite;
+    border: 2px solid rgb(210, 151, 151);
+    border-radius: 5px;
+}
+/* given style to legend attribute. */
+legend{
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* given style to label attribute. */
+label{
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* given style to fieldset attribute. */
+select{
+    width: 20%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    background-color: antiquewhite;
+    border: 2px solid rgb(210, 151, 151);
+    border-radius: 5px;
+}
+/* given style to input attribute of radio type. */
+input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(205, 162, 81);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+/* given style to input attribute of checkbox type. */
+input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgb(205, 162, 81);
+}
+input[type="radio"]:checked {
+    border-color: #e8aa53; 
+    background-color: #7f5f08;
+}
+input[type="checkbox"]:checked {
+    border-color: #e8aa53; 
+    background-color: #7f5f08;
+}
+input[type="radio"]:checked::before {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000; 
+    display: block;
+    text-align: center;
+}
+input[type="checkbox"]:checked::before {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    display: block;
+    text-align: center;
+}
+/* given style to cheese, sauces and toppings class of fieldset attribute. */
+.cheese, .sauces, .toppings{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
